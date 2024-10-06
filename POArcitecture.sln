@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POArcitecture", "POArcitecture\POArcitecture.csproj", "{915C3C3D-7624-44C3-B208-404AFFA0D67A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{915C3C3D-7624-44C3-B208-404AFFA0D67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915C3C3D-7624-44C3-B208-404AFFA0D67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915C3C3D-7624-44C3-B208-404AFFA0D67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915C3C3D-7624-44C3-B208-404AFFA0D67A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {000AAA4E-9788-48F6-BE6B-D1D74DD1FE2E}
+	EndGlobalSection
+EndGlobal
