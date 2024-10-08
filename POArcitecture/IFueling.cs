@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POArcitecture
+namespace Arcitecture
 {
-    internal interface IModelChangedObserver
+    public interface IFueling
     {
-        void ApplyUpdateModel(); 
+        void Fuel();
     }
 }

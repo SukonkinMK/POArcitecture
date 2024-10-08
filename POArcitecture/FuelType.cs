@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POArcitecture
+namespace Arcitecture
 {
-    public interface IModelChanger
+    public enum FuelType
     {
-        void NotifyChange();
+        Diesel,
+        Gasoline
     }
 }
