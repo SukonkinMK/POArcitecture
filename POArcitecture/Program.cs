@@ -1,25 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Arcitecture;
 
-Harvester harvester = new("", "", CarType.Truck, 6, FuelType.Diesel);
-SportCar sportCar = new("", "", CarType.Sport, 3, FuelType.Gasoline);
-Console.WriteLine($"Обслуживание уборщика {CalcMaintandanceCost(harvester)}");
-Console.WriteLine($"Обслуживание спорткара {CalcMaintandanceCost(sportCar)}");
-IRefueling refuelingStation = new RefuelingStation();
-harvester.RefuelingStation = refuelingStation;
-harvester.Fuel();
-IWiping wipingStation = new WipingStation();
-harvester.WipingStation = wipingStation;
-harvester.Wipping();
+Core core = new();
+MobileApp mobileApp = new(core.GetTicketProvider(), core.GetCustomerProvider(), "Misha123","pasword");
+BusStation busStation = new(core.GetTicketProvider());
 
-
-
-static int CalcMaintandanceCost(Car car)
+if (mobileApp.BuyTicket("10001001001"))
 {
-    if (car.WeelCount >= 6)
-        return car.WeelCount * 1500;
-    else
-    {
-        return car.WeelCount * 1000;
-    }
+    Console.WriteLine("Клиент успешно купил билет");
+    mobileApp.SearchTicket(new DateTime());
+    Ticket ticket = mobileApp.GetTickets().First();
+    if(busStation.CheckTicket(ticket.QRCode))
+        Console.WriteLine("Клиент успешно прошел в автобус");
 }
